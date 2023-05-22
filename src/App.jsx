@@ -105,8 +105,8 @@ function Card({ cards, estado, setEstado, qtdPerguntasRespondidas, setQtdPergunt
   if (estado[cards.id] === 'fechado') {
     return (
       <>
-        <div className={estado[cards.id]} data-test='flashcard-text' key={cards.id}>
-          <p>Pergunta {cards.id + 1}</p>
+        <div className={estado[cards.id]} data-test='flashcard' key={cards.id}>
+          <p data-test='flashcard-text'>Pergunta {cards.id + 1}</p>
           <img data-test='play-btn' onClick={() => aberto(cards)} src={play} alt="" />
         </div>
       </>)
@@ -115,8 +115,8 @@ function Card({ cards, estado, setEstado, qtdPerguntasRespondidas, setQtdPergunt
   if (estado[cards.id] === 'aberto') {
     return (
       <>
-        <div className={estado[cards.id]} data-test='flashcard-text' key={cards.id}>
-          <p>{cards.question}</p>
+        <div className={estado[cards.id]} data-test='flashcard' key={cards.id}>
+          <p data-test='flashcard-text'>{cards.question}</p>
           <img data-test='turn-btn' onClick={() => virado(cards)} src={virar} alt="" />
         </div>
       </>)
@@ -125,8 +125,8 @@ function Card({ cards, estado, setEstado, qtdPerguntasRespondidas, setQtdPergunt
   if (estado[cards.id] === 'virado') {
     return (
       <>
-        <div className={estado[cards.id]} data-test='flashcard-text' key={cards.id}>
-          <p>{cards.answer}</p>
+        <div className={estado[cards.id]} data-test='flashcard' key={cards.id}>
+          <p data-test='flashcard-text'>{cards.answer}</p>
           <div className='botoes'>
             <button data-test='no-btn' onClick={() => concluido('no', cards)}>Não Lembrei</button>
             <button data-test='partial-btn' onClick={() => concluido('partial', cards)}>Quase não lembrei</button>
@@ -139,8 +139,8 @@ function Card({ cards, estado, setEstado, qtdPerguntasRespondidas, setQtdPergunt
   if (estado[cards.id] === 'concluido') {
     return (
       <>
-        <div className={estado[cards.id]} data-test='flashcard-text' key={cards.id}>
-          <p className={respostas[cards.id].r}>Pergunta {cards.id + 1}</p>
+        <div className={estado[cards.id]} data-test='flashcard' key={cards.id}>
+          <p data-test='flashcard-text' className={respostas[cards.id].r}>Pergunta {cards.id + 1}</p>
           {respostas[cards.id].icon}
         </div>
       </>)
