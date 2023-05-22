@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
@@ -7,9 +7,9 @@ body {
   width: 100%;
   position: absolute;
   overflow-y: scroll;
-}
+} */
 
-.header {
+/* .header {
   background-color: #FB6B6B;
   display: flex;
   justify-content: center;
@@ -30,8 +30,8 @@ body {
   font-size: 36px;
   font-weight: 400;
   color: #FFFFFF;
-}
-.mid {
+} */
+/* .mid {
   background-color: #FB6B6B;
   width: 100%;
   display: flex;
@@ -39,9 +39,9 @@ body {
   align-items: center;
   overflow-y: hidden;
   margin-bottom: 70px;
-}
+} */
 
-.fechado {
+/* .fechado {
   background-color: #FFFFFF;
   display: flex;
   width: 270px;
@@ -66,9 +66,9 @@ body {
 
 .fechado img:hover { 
   cursor: pointer;
-}
+} */
 
-.aberto {
+/* .aberto {
   width: 270px;
   height: 111px;
   background-color: #FFFFD4;
@@ -92,9 +92,9 @@ body {
 
 .aberto img:hover {
   cursor: pointer;
-}
+} */
 
-.virado {
+/* .virado {
   width: 270px;
   height: 145px;
   background-color: #FFFFD4;
@@ -118,17 +118,17 @@ body {
 
 .virado img:hover{
   cursor: pointer;
-}
+} */
 
-.botoes {
+/* .botoes {
   display: flex;
   justify-content: space-around;
   align-items: center; 
   position: absolute;
   bottom: 10px;
-}
+} */
 
-.botoes button {
+/* .botoes button {
   width: 70px;
   height: 37px;
   font-family: Recursive;
@@ -155,9 +155,9 @@ body {
 
 .botoes button:hover{
   cursor: pointer;
-}
+} */
 
-.concluido {
+/* .concluido {
   background-color: #FFFFFF;
   display: flex;
   width: 270px;
@@ -193,9 +193,9 @@ body {
 .concluido img {
   width: 23px;
   height: 23px;
-}
+} */
 
-.footer {
+/* .footer {
   background-color: #FFFFFF;
   width: 100%;
   display: flex;
@@ -211,4 +211,4 @@ body {
   font-family: Recursive;
   font-size: 18px;
   font-weight: 400;
-}
+} */

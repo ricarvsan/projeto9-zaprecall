@@ -21,12 +21,20 @@ export default function App() {
   const [respostas, setRespostas] = useState(['', '', '', '', '', '', '', ''])
 
   return (
-    <>
+    <Body>
       <Corpo cards={cards} estado={estado} setEstado={setEstado} qtdPerguntasRespondidas={qtdPerguntasRespondidas} setQtdPerguntasRespondidas={setQtdPerguntasRespondidas} respostas={respostas} setRespostas={setRespostas} />
       <Rodape qtdPerguntasRespondidas={qtdPerguntasRespondidas} />
-    </>
+    </Body>
   );
 }
+
+const Body = styled.div`
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  position: absolute;
+  overflow-y: scroll;
+`
 
 
 
